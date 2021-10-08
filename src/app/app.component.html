@@ -1,5 +1,6 @@
 <div id="masterBox" class="fcaic">
-  <div id="headerBox">
+  <nav [ngClass]="burgerStatus ? 'navOpen' : 'navClosed'"><a href="#about">About</a><a href="#contact">Contact</a><a>Footer</a></nav>
+  <div id="homeBox">
     <div id="burgerBox" class="fcaic" (click)="toggleBurger()">
     <div id="burger" [ngClass]="burgerStatus ? 'burgerMidOpen' : 'burgerMidClosed'"></div>
     </div>
@@ -9,17 +10,71 @@
     <h1>Hello<br>I'm King<br>Choco</h1>
     <p>8-bit yuccie hoodie, viral lyft VHS tumeric. Schlitz gastropub kombucha, meditation cray church-key neutra farm-to-table lomo pinterest disrupt. Franzen snackwave squid portland.</p>
   </div>
-  <div id="blueBox" class="fcaic">
+  <div class="fcaic blueBox">
     <h2>Choco</h2>
   </div>
   <div id="lightBox" class="fcaic">
     <p>Raw denim wayfarers deep v swag. Air plant mustache edison bulb</p>
     <p>Chillwave street art enamel pin dreamcatcher migas distillery waistcoat, paleo intelligentsia pug actually aesthetic single-origin coffee glossier.</p>
   <div id="logoRow">
-    <img src="assets/images/drum-set.png" />
-    <img src="assets/images/fishing.png" />
-    <img src="assets/images/bicycle.png" />
+    <div>
+      <img src="assets/images/drum-set.png" />
+    </div>
+    <div>
+      <img src="assets/images/fishing.png" />
+    </div>
+    <div>
+      <img src="assets/images/bicycle.png" />
+    </div>
   </div>
+  </div>
+  <div id="about">
+    <img src="assets/images/jess-bat.jpg" />
+  </div>
+  <div class="fcaic">
+    <div class="fcaic orangeBox">
+      <h2>About</h2>
+    </div>
+    <div id="aboutDescription" class="fcaic">
+      <p>Kombucha photo booth disrupt, tofu freegan gentrify lumbersexual lo-fi shoreditch narwhal portland succulents bitters flannel woke. Banh mi succulents cray, single-origin coffee selvage forage ethical chillwave. Hell of vice lo-fi, quinoa wolf subway tile air plant. Tattooed pok pok flannel thundercats paleo typewriter chicharrones, readymade sartorial vice retro tofu direct trade vinyl locavore. Man braid church-key meditation activated charcoal pinterest migas hashtag la croix vaporware. Street art kombucha migas, swag synth PBR&B sartorial raclette. Hammock asymmetrical brooklyn vinyl kombucha.</p>
+   <br />
+   <br />
+      <p>Pinterest yuccie whatever, everyday carry kale chips sriracha crucifix polaroid live-edge trust fund. Retro humblebrag hot chicken raw denim health goth hella. Palo santo crucifix kale chips green juice chicharrones meggings pork belly. Coloring book austin vice master cleanse, jean shorts next level vexillologist iPhone hoodie.</p>
+    <br />
+    <br />
+    <p>I'm baby fam echo park raw denim everyday carry put a bird on it YOLO microdosing vice XOXO lomo umami keffiyeh brooklyn. Twee helvetica flexitarian tote bag. Celiac air plant beard chia. Lumbersexual gentrify photo booth knausgaard tousled. Ramps mlkshk messenger bag drinking vinegar shoreditch 8-bit.</p>
+    </div>
+  </div>
+  <div class="fcaic" id="contactMasterBox">
+    <div id="contact" class="fcaic yellowBox">
+      <h2>Contact</h2>
+    </div>
+    <img src="assets/images/jess-birch-old.png" />
+  </div>
+  <div class="fcaic">
+    <div id="contactInfoRoof"></div>
+    <div id="contactInfo">
+      <div>
+        <a href="mailto:jessmaxwelldrums@gmail.com">
+          <img src="assets/images/email.png" />
+        </a>
+        <p class="contactSpacer">-</p>
+        <p>jessmaxwelldrums@gmail.com</p>
+      </div>
+      <div>
+        <a href="tel:781-925-5555">
+          <img src="assets/images/phone.png" />
+        </a>
+        <p class="contactSpacer">-</p>
+        <p>Phone Number</p>
+      </div>
+    </div>
   </div>
 </div>
+<footer class="fcaic">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="assets/images/ig.png" />
+  </a>
+  <p>King Choco, 2021</p>
+</footer>
 </div>

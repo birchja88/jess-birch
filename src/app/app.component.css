@@ -6,7 +6,7 @@
 }
 
 #burgerBox {
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: 40px;
   justify-content: center;
@@ -73,15 +73,48 @@
   transition-duration: 0.5s;
 }
 
+nav {
+  background-color: #faeddf;
+  width: 120em;
+  height: 7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition-duration: 0.5s;
+  position: fixed;
+  top: 0;
+}
+
+.navClosed {
+  transform: translate(0em, -7em);
+}
+
+.navOpen {
+  transform: translate(0em, 0em);
+}
+
+nav a {
+  color: #7a5932;
+  font-size: 1.6em;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+nav a:hover {
+  color: #198597;
+}
+
 #sideName {
   color: #7a5932;
   font-size: 2em;
   letter-spacing: 0.3em;
-  position: absolute;
+  position: fixed;
   transform: rotate(-90deg) translate(-5em, -6.5em);
 }
 
-#headerBox {
+#homeBox {
   width: 120em;
   margin: 7em 0;
   display: flex;
@@ -114,15 +147,41 @@
   line-height: 2em;
 }
 
-#blueBox {
+.blueBox {
   width: 75em;
   height: 40em;
   background-color: #198597;
   justify-content: center;
 }
 
-#blueBox h2 {
+.blueBox h2 {
   color: #fcf7f1;
+  font-size: 6em;
+  font-weight: 300;
+}
+
+.orangeBox {
+  width: 75em;
+  height: 40em;
+  background-color: #f8a577;
+  justify-content: center;
+}
+
+.orangeBox h2 {
+  color: #fcf7f1;
+  font-size: 6em;
+  font-weight: 300;
+}
+
+.yellowBox {
+  width: 75em;
+  height: 40em;
+  background-color: #fff48f;
+  justify-content: center;
+}
+
+.yellowBox h2 {
+  color: #9e7e63;
   font-size: 6em;
   font-weight: 300;
 }
@@ -157,7 +216,111 @@
   align-items: center;
 }
 
+#logoRow div {
+  width: 5em;
+  height: 5em;
+  background-color: #f0deca7a;
+  border-radius: 2em 0 2em 0;
+}
+
 #logoRow img {
   height: 5em;
   width: auto;
+  transform: translate(-1.5em, -1em);
+}
+
+#logoRow div:nth-child(2) img {
+  transform: translate(1em, -1em);
+}
+
+#about {
+  width: 45em;
+  height: 71em;
+  background-color: turquoise;
+}
+
+#about img {
+  width: 45em;
+  height: 100%;
+}
+
+#aboutDescription {
+  background-color: #f0deca;
+  width: 75em;
+  height: 70em;
+  justify-content: center;
+}
+
+#aboutDescription p {
+  color: #7a5932;
+  line-height: 2em;
+  font-size: 1.5em;
+  margin: 0 5em;
+}
+
+#contactMasterBox img {
+  width: 75em;
+  height: auto;
+}
+
+#contactInfo {
+  width: 45em;
+  height: 20em;
+  background-color: #fcf7f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#contactInfoRoof {
+  width: 45em;
+  height: 20em;
+  background-color: #faeddf;
+}
+
+#contactInfo div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 3em;
+}
+
+.contactSpacer {
+  margin: 0 2em;
+}
+
+#contactInfo div a img {
+  height: 5em;
+  width: auto;
+  transition-duration: 0.5s;
+}
+
+#contactInfo div a img:hover {
+  transform: scale(1.1);
+}
+
+#contactInfo div p {
+  color: #7a5932;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+footer {
+  margin: 0 0 2em 0;
+}
+
+footer img {
+  width: 3em;
+  height: 3em;
+  transition-duration: 0.5s;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  color: #7a5932;
+  margin: 1.5em 0 0 0;
 }
