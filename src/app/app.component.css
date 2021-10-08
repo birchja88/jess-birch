@@ -5,6 +5,82 @@
   font-size: 10px;
 }
 
+#burgerBox {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  transform: translate(-5.5em, -5.5em);
+  cursor: pointer;
+}
+
+#burger {
+  width: 18px;
+  height: 3px;
+  transform: translate(-5px);
+  transition-duration: 0.5s;
+}
+
+.burgerMidClosed {
+  background-color: #7a5932;
+}
+
+.burgerMidOpen {
+  background-color: transparent;
+}
+
+.burgerMidClosed::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #7a5932;
+  transform-origin: left;
+  transform: translate(0px, -10px);
+  transition-duration: 0.5s;
+}
+
+.burgerMidOpen::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #7a5932;
+  transform-origin: left;
+  transform: translate(0px, -10px) rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+.burgerMidClosed::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #7a5932;
+  transform-origin: left;
+  transform: translate(0px, 10px);
+  transition-duration: 0.5s;
+}
+
+.burgerMidOpen::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #7a5932;
+  transform-origin: left;
+  transform: translate(0px, 10px) rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#sideName {
+  color: #7a5932;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  position: absolute;
+  transform: rotate(-90deg) translate(-5em, -6.5em);
+}
+
 #headerBox {
   width: 120em;
   margin: 7em 0;

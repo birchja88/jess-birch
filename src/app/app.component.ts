@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jess-birch';
+
+  burgerStatus: boolean = false;
+
+  toggleBurger() {
+    this.burgerStatus = !this.burgerStatus;
+  }
 }

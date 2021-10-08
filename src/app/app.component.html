@@ -1,5 +1,9 @@
 <div id="masterBox" class="fcaic">
-<div id="headerBox">
+  <div id="headerBox">
+    <div id="burgerBox" class="fcaic" (click)="toggleBurger()">
+    <div id="burger" [ngClass]="burgerStatus ? 'burgerMidOpen' : 'burgerMidClosed'"></div>
+    </div>
+  <h3 id="sideName">JESS BIRCH</h3>
   <img src="../assets/images/jess-bike.jpg.jpg" id="jessBike" />
   <div id="greetingBox" class="fcaic">
     <h1>Hello<br>I'm King<br>Choco</h1>
