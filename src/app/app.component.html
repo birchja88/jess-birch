@@ -1,10 +1,11 @@
 <div id="masterBox" class="fcaic">
-  <nav [ngClass]="burgerStatus ? 'navOpen' : 'navClosed'"><a href="#about">About</a><a href="#contact">Contact</a><a>Footer</a></nav>
+  <nav [ngClass]="burgerStatus ? 'navOpen' : 'navClosed'"><a href="#about">About</a><a href="#contact">Contact</a><a href="#footer">Footer</a></nav>
   <div id="homeBox">
     <div id="burgerBox" class="fcaic" (click)="toggleBurger()">
-    <div id="burger" [ngClass]="burgerStatus ? 'burgerMidOpen' : 'burgerMidClosed'"></div>
+      <div id="burger" [ngClass]="burgerStatus ? 'burgerMidOpen' : 'burgerMidClosed'"></div>
     </div>
-  <h3 id="sideName">JESS BIRCH</h3>
+    <h3 id="sideName">JESS BIRCH</h3>
+    <div id="backingBar"></div>
   <img src="assets/images/jess-bike.jpg" id="jessBike" />
   <div id="greetingBox" class="fcaic">
     <h1>Hello<br>I'm King<br>Choco</h1>
@@ -53,7 +54,7 @@
   </div>
   <div class="fcaic">
     <div id="contactInfoRoof"></div>
-    <div id="contactInfo">
+    <div id="contactInfo" class="fcaic">
       <div>
         <a href="mailto:jessmaxwelldrums@gmail.com">
           <img src="assets/images/email.png" />
@@ -71,7 +72,7 @@
     </div>
   </div>
 </div>
-<footer class="fcaic">
+<footer class="fcaic" id="footer">
   <a href="https://www.instagram.com" target="_blank">
     <img src="assets/images/ig.png" />
   </a>
