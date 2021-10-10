@@ -1,0 +1,267 @@
+@media (max-width: 1367px) {
+  #burgerBox {
+    transform: translate(118em, -5.5em);
+  }
+
+  #sideName {
+    transform: translate(0em, -3.25em);
+  }
+
+  nav {
+    width: 25em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 0;
+  }
+
+  .navClosed {
+    transform: translate(25em, 0em);
+  }
+
+  .navOpen {
+    transform: translate(0em, 0em);
+  }
+}
+
+@media (max-width: 1302px) {
+  #masterBox {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1176px) {
+  #masterBox {
+    font-size: 8px;
+  }
+  #burgerBox {
+    width: 30px;
+    height: 30px;
+    transform: translate(118em, -5.5em);
+  }
+
+  #burger {
+    width: 13.5px;
+    height: 2px;
+    transform: translate(-4px);
+  }
+
+  .burgerMidClosed::before {
+    width: 18px;
+    height: 2px;
+    transform: translate(0px, -7.5px);
+  }
+
+  .burgerMidOpen::before {
+    width: 22.5px;
+    height: 2px;
+    transform: translate(0px, -7.5px) rotate(45deg);
+  }
+
+  .burgerMidClosed::after {
+    width: 22.5px;
+    height: 2px;
+    transform: translate(0px, 7.5px);
+  }
+
+  .burgerMidOpen::after {
+    width: 22.5px;
+    height: 2px;
+    transform: translate(0px, 7.5px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 1047px) {
+  #masterBox {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 927px) {
+  #masterBox {
+    font-size: 8px;
+  }
+  #homeBox {
+    width: 100em;
+    margin: 7em 0;
+  }
+  #burgerBox {
+    width: 30px;
+    height: 30px;
+    transform: translate(97.5em, -5.5em);
+  }
+  #greetingBox,
+  #contactMasterBox,
+  #lightBox {
+    margin: 0 0 0 auto;
+  }
+
+  #contactInfoRoof {
+    display: none;
+  }
+}
+
+@media (max-width: 877px) {
+  #masterBox {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 776px) {
+  #masterBox {
+    font-size: 6px;
+  }
+
+  #greetingBox p {
+    font-size: 1.8em;
+  }
+
+  #lightBox {
+    height: 50em;
+  }
+
+  #lightBox p:first-child {
+    font-size: 2.5em;
+  }
+
+  #lightBox p:nth-child(2) {
+    font-size: 1.8em;
+    margin: 1em 2em 4em 2em;
+  }
+
+  #aboutDescription {
+    height: 95em;
+  }
+
+  #aboutDescription p {
+    line-height: 2em;
+    font-size: 1.8em;
+    margin: 0 5em;
+  }
+
+  #contactInfo {
+    width: 65em;
+    height: 30em;
+  }
+
+  .contactSpacer {
+    margin: 0 2em;
+  }
+
+  #contactInfo div a img {
+    height: 7em;
+  }
+
+  #contactInfo div p {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  footer {
+    margin: 0 0 3em 0;
+  }
+
+  footer img {
+    width: 4em;
+    height: 4em;
+  }
+
+  footer p {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 662px) {
+  #masterBox {
+    font-size: 5px;
+  }
+
+  #burgerBox {
+    transform: translate(95.5em, -5.5em);
+  }
+}
+
+@media (max-width: 547px) {
+  #masterBox {
+    font-size: 4px;
+  }
+
+  #homeBox {
+    margin: 10em 0;
+  }
+
+  #sideName {
+    font-size: 2.75em;
+    letter-spacing: 0.3em;
+    position: fixed;
+    transform: translate(0em, -3.3em);
+  }
+
+  #burgerBox {
+    transform: translate(95.5em, -8.5em);
+  }
+
+  #backingBar {
+    height: 10em;
+  }
+
+  #lightBox {
+    height: 64em;
+  }
+
+  #lightBox p:first-child {
+    font-size: 2.7em;
+  }
+
+  #lightBox p:nth-child(2) {
+    font-size: 2em;
+    margin: 3em 2em 5em 2em;
+  }
+
+  #aboutDescription {
+    height: 115em;
+  }
+
+  #aboutDescription p {
+    line-height: 2em;
+    font-size: 2em;
+    margin: 0 5em;
+  }
+
+  #contactInfo {
+    width: 70em;
+    height: 32em;
+  }
+
+  .contactSpacer {
+    margin: 0 2em;
+  }
+
+  #contactInfo div p {
+    font-size: 2.5em;
+  }
+
+  footer {
+    margin: 0 0 3em 0;
+  }
+
+  footer img {
+    width: 5em;
+    height: 5em;
+  }
+
+  footer p {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 452px) {
+  #masterBox {
+    font-size: 3px;
+  }
+
+  #burgerBox {
+    transform: translate(90.5em, -10em);
+  }
+}
