@@ -93,7 +93,7 @@ nav {
   transition-duration: 0.5s;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navClosed {

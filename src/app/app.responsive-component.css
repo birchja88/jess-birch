@@ -15,6 +15,7 @@
     justify-content: space-around;
     right: 0;
     border-left: 0.3em solid #198597;
+    z-index: 2;
   }
 
   .navClosed {
