@@ -14,10 +14,11 @@
     flex-direction: column;
     justify-content: space-around;
     right: 0;
+    border-left: 0.3em solid #198597;
   }
 
   .navClosed {
-    transform: translate(25em, 0em);
+    transform: translate(25.3em, 0em);
   }
 
   .navOpen {
@@ -263,5 +264,26 @@
 
   #burgerBox {
     transform: translate(90.5em, -10em);
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  #greetingBox {
+    width: 50em;
+    height: 85em;
+  }
+
+  #greetingBox h1 {
+    font-size: 8em;
+    margin: 0;
+  }
+
+  #greetingBox p {
+    font-size: 2.2em;
+    color: #7a5932;
+    margin: 4em 5em 0em 5em;
+    line-height: 2em;
   }
 }
